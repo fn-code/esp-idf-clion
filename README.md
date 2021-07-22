@@ -24,7 +24,49 @@ cd ~/esp/esp-idf
 1. Open clion IDE and make new project
 2. Setup clion toolchain and cmake configuration **Build, Execution, Deployment**
 
-    Setup clion toolchain
+    ### Setup clion toolchain
+    Select **Toolchains** and change C Compiler and C++ Compiler with esp-idf compiler
+
+    ![](images/1.png) 
+
+    **Example :**
+
+    **C Compiler** = /Users/your_user/.espressif/tools/xtensa-esp32-elf/esp-2021r1-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc
+
+    **C++ Compiler** = /Users/your_user/.espressif/tools/xtensa-esp32-elf/esp-2021r1-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++
+
+    ### Setup clion CMake
+
+    1. Add IDF_PATH and PYTHON in CMake options,
+        **Example : **
+        **-DIDF_PATH** = /Users/your_user/esp/esp-idf 
+        
+        **-DPYTHON** = /Users/your_user/.espressif/python_env/idf4.4_py3.9_env/bin/python3.9
+
+        ![](images/2.png) 
+
+    2. Add IDF_PATH and PYTHON on Environment
+        **Example : **
+        **IDF_PATH**=/Users/ludinnento/esp/esp-idf
+        
+        **PYTHON**=/Users/ludinnento/.espressif/python_env/idf4.4_py3.9_env/bin/python3.9
+
+        ![](images/3.png) 
+
+    ### Setup Python Interpreter
+
+    1. Select **Python Interpreter**
+
+        ![](images/4.png) 
+    2. Add 
+
+        ![](images/5.png)
+    3. Select System Interpreter
+
+        ![](images/6.png)
+    4. Search and choose python binary in .espressif/python_env/idf4.4_py3.9_env/bin/python3.9
+
+        ![](images/7.png)
     
 4. Create directory main
 
@@ -55,5 +97,34 @@ cd ~/esp/esp-idf
 
     include_directories("src")
     ```
-7. 
+6. Set up esp-idf environment variables
+    Open Clion Terminal, and running
+    ```
+    . $HOME/esp/esp-idf/export.sh
+    ```
 
+7. Set up project
+    In CLion terminal running : 
+    ```
+    idf.py set-target esp32
+    ```
+    and
+    ```
+    idf.py menuconfig
+    ```
+    menuconfig used for configuration esp-idf 
+
+7. Build esp project
+    In CLion terminal running : 
+    ```
+    idf.py build
+    ```
+
+8. Flash
+     ```
+     idf.py -p ESP-PORT -b 115200 flash 
+     ```
+
+9. Monitor
+    ```
+    idf.py -p ESP-PORT -b 115200 monitor  
