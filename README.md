@@ -23,9 +23,21 @@ cd ~/esp/esp-idf
 
 1. Open clion IDE and make new project
 2. Setup clion toolchain and cmake configuration **Build, Execution, Deployment**
-3. Create directory main
+
+    Setup clion toolchain
+    
+4. Create directory main
 
     In this directory contain main.cpp or main.c of your esp program
+    
+    after create main.c/main.cpp, add another CMakeList.txt in this directory
+    ```
+    set(SOURCES "main.cpp")
+
+    idf_component_register(SRCS ${SOURCES}
+    INCLUDE_DIRS "")
+        
+    ```
     
 5. Add CMakeList.txt inside application project
 
