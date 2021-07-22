@@ -21,3 +21,27 @@ cd ~/esp/esp-idf
 
 ## Set up a sample project using CLion
 
+1. Open clion IDE and make new project
+2. Setup clion toolchain and cmake configuration **Build, Execution, Deployment**
+3. Create directory main
+
+    In this directory contain main.cpp or main.c of your esp program
+    
+5. Add CMakeList.txt inside application project
+
+    ```
+    cmake_minimum_required(VERSION 3.5)
+
+    include($ENV{IDF_PATH}/tools/cmake/project.cmake)
+
+    #set(CMAKE_FIND_ROOT_PATH /Users/your_user/.espressif/tools/xtensa-esp32-elf/esp-2021r1-8.4.0/xtensa-esp32-elf)
+    set(CMAKE_C_COMPILER /Users/your_user/.espressif/tools/xtensa-esp32-elf/esp-2021r1-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc)
+    set(CMAKE_ASM_COMPILER /Users/your_user/.espressif/tools/xtensa-esp32-elf/esp-2021r1-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++)
+    set(CMAKE_C_COMPILER /Users/your_user/.espressif/tools/xtensa-esp32-elf/esp-2021r1-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc)
+
+    project(esp32t)
+
+    include_directories("src")
+    ```
+7. 
+
