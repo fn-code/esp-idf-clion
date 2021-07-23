@@ -35,38 +35,39 @@ cd ~/esp/esp-idf
 
     **C++ Compiler** = /Users/your_user/.espressif/tools/xtensa-esp32-elf/esp-2021r1-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++
 
-    ### Setup clion CMake
+      ### Setup clion CMake
 
-    1. Add IDF_PATH and PYTHON in CMake options,
-        **Example : **
-        **-DIDF_PATH** = /Users/your_user/esp/esp-idf 
         
-        **-DPYTHON** = /Users/your_user/.espressif/python_env/idf4.4_py3.9_env/bin/python3.9
+      1. Add IDF_PATH and PYTHON in CMake options,
+            **Example : **
+            **-DIDF_PATH** = /Users/your_user/esp/esp-idf 
 
-        ![](images/2.png) 
+            **-DPYTHON** = /Users/your_user/.espressif/python_env/idf4.4_py3.9_env/bin/python3.9
 
-    2. Add IDF_PATH and PYTHON on Environment
-        **Example : **
-        **IDF_PATH**=/Users/ludinnento/esp/esp-idf
-        
-        **PYTHON**=/Users/ludinnento/.espressif/python_env/idf4.4_py3.9_env/bin/python3.9
+            ![](images/2.png) 
 
-        ![](images/3.png) 
+      2. Add IDF_PATH and PYTHON on Environment
+            **Example : **
+            **IDF_PATH**=/Users/ludinnento/esp/esp-idf
 
-    ### Setup Python Interpreter
+            **PYTHON**=/Users/ludinnento/.espressif/python_env/idf4.4_py3.9_env/bin/python3.9
 
-    1. Select **Python Interpreter**
+            ![](images/3.png)         
 
-        ![](images/4.png) 
-    2. Add 
+      ### Setup Python Interpreter
 
-        ![](images/5.png)
-    3. Select System Interpreter
+      1. Select **Python Interpreter**
 
-        ![](images/6.png)
-    4. Search and choose python binary in .espressif/python_env/idf4.4_py3.9_env/bin/python3.9
+            ![](images/4.png) 
+      2. Add 
 
-        ![](images/7.png)
+            ![](images/5.png)
+      3. Select System Interpreter
+
+            ![](images/6.png)
+      4. Search and choose python binary in .espressif/python_env/idf4.4_py3.9_env/bin/python3.9
+
+            ![](images/7.png)
     
 4. Create directory main
 
