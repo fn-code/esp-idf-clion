@@ -38,7 +38,7 @@ cd ~/esp/esp-idf
       ### Setup clion CMake
 
         
-      1. Add IDF_PATH and PYTHON in CMake options,
+      **1. Add IDF_PATH and PYTHON in CMake options**
             **Example : **
             **-DIDF_PATH** = /Users/your_user/esp/esp-idf 
 
@@ -46,7 +46,7 @@ cd ~/esp/esp-idf
 
             ![](images/2.png) 
 
-      2. Add IDF_PATH and PYTHON on Environment
+      **2. Add IDF_PATH and PYTHON on Environment**
             **Example : **
             **IDF_PATH**=/Users/ludinnento/esp/esp-idf
 
@@ -56,16 +56,16 @@ cd ~/esp/esp-idf
 
       ### Setup Python Interpreter
 
-      1. Select **Python Interpreter**
+      **1. Select **Python Interpreter**
 
             ![](images/4.png) 
-      2. Add 
+      **2. Add** 
 
             ![](images/5.png)
-      3. Select System Interpreter
+      **3. Select System Interpreter**
 
             ![](images/6.png)
-      4. Search and choose python binary in .espressif/python_env/idf4.4_py3.9_env/bin/python3.9
+      **4. Search and choose python binary in .espressif/python_env/idf4.4_py3.9_env/bin/python3.9**
 
             ![](images/7.png)
     
