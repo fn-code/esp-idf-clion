@@ -40,33 +40,29 @@ cd ~/esp/esp-idf
         
       **1. Add IDF_PATH and PYTHON in CMake options**
             **Example : **
+            <br>
             **-DIDF_PATH** = /Users/your_user/esp/esp-idf 
-
+            <br>
             **-DPYTHON** = /Users/your_user/.espressif/python_env/idf4.4_py3.9_env/bin/python3.9
-
             ![](images/2.png) 
 
       **2. Add IDF_PATH and PYTHON on Environment**
             **Example : **
+            <br>
             **IDF_PATH**=/Users/ludinnento/esp/esp-idf
-
+            <br>
             **PYTHON**=/Users/ludinnento/.espressif/python_env/idf4.4_py3.9_env/bin/python3.9
-
             ![](images/3.png)         
 
       ### Setup Python Interpreter
 
       **1. Select **Python Interpreter**
-
             ![](images/4.png) 
       **2. Add** 
-
             ![](images/5.png)
       **3. Select System Interpreter**
-
             ![](images/6.png)
       **4. Search and choose python binary in .espressif/python_env/idf4.4_py3.9_env/bin/python3.9**
-
             ![](images/7.png)
     
 4. Create directory main
