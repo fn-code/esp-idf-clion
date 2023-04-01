@@ -56,7 +56,7 @@ cd ~/esp/esp-idf
 
       ### Setup Python Interpreter
 
-      **1. Select **Python Interpreter**
+      **1. Select Python Interpreter**
             ![](images/4.png) 
       **2. Add** 
             ![](images/5.png)
